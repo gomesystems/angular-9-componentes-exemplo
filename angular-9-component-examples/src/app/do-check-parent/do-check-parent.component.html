@@ -1,0 +1,11 @@
+<div>
+  <h2>DoCheck Parent</h2>
+
+  <p>
+    Cost: <input type="number" [(ngModel)]="cost" /><br>
+    Margin: <input type="number" [(ngModel)]="margin" />
+  </p>
+  <p><button (click)="clean()">Clean Log</button></p>
+
+  <app-do-check-example [cost]="cost" [margin]="margin"></app-do-check-example>
+</div>

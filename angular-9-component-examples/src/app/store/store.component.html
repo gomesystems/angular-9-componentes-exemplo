@@ -1,0 +1,10 @@
+<h1>Component Interaction with Service Example</h1>
+<h2>Online Store</h2>
+<button (click)="orderReady()">Order is Ready</button>
+<app-customer *ngFor="let item of items"
+  [item]="item">
+</app-customer>
+<h3>History</h3>
+<ul>
+  <li *ngFor="let event of history">{{event}}</li>
+</ul>

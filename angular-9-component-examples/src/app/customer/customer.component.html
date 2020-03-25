@@ -1,0 +1,8 @@
+<p>
+  {{item}}: <strong>{{order}}</strong>
+  <button
+    (click)="confirm()"
+    [disabled]="!ready || confirmed">
+    Confirm
+  </button>
+</p>

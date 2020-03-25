@@ -1,0 +1,13 @@
+<h1>Send and Receive Events using EventEmitter</h1>
+<dl>
+  <dt>Product Name:</dt>
+  <dd>{{productName}}</dd>
+  <dt>Product Description:</dt>
+  <dd>{{productDesc}}</dd>
+  <dt>Product Price:</dt>
+  <dd>${{productPrice}}</dd>
+</dl>
+<app-products *ngFor="let prod of products"
+  [product]="prod"
+  (prodDet)="showDetails($event)">
+</app-products>
